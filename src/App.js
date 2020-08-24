@@ -6,7 +6,9 @@ import { drumPad, bankPad } from './PadData';
 import BankPad from './components/BankPad/BankPad';
 class App extends React.Component {
     constructor(props) {
+
         super(props);
+
         this.state = {
             power: true,
             display: String.fromCharCode(160),
@@ -14,6 +16,7 @@ class App extends React.Component {
             currentPadBankId: 'Heater Kit',
             sliderVal: 0.3
         }
+        
         this.displayClipName = this.displayClipName.bind(this);
         this.selectBank = this.selectBank.bind(this);
         this.adjustVolume = this.adjustVolume.bind(this);
